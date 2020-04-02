@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VvZ-va-K06">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAc-7y-h3O">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="YandexMapViewController" customModule="MapKit_2_10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahs-dJ-ZVV" customClass="YMKMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
@@ -36,26 +36,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2872.8000000000002" y="138.98050974512745"/>
         </scene>
         <!--Apple-->
         <scene sceneID="P7J-On-8ac">
             <objects>
                 <viewController id="Jat-3g-29h" customClass="AppleMapViewController" customModule="MapKit_2_10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n0y-sf-CCU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DZb-ug-SyE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZb-ug-SyE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DZb-ug-SyE" firstAttribute="top" secondItem="J7F-qf-sYP" secondAttribute="top" id="Kor-b9-p0X"/>
-                            <constraint firstItem="DZb-ug-SyE" firstAttribute="leading" secondItem="J7F-qf-sYP" secondAttribute="leading" id="WZD-G9-Mg1"/>
-                            <constraint firstItem="J7F-qf-sYP" firstAttribute="trailing" secondItem="DZb-ug-SyE" secondAttribute="trailing" id="blc-BB-WLF"/>
-                            <constraint firstItem="J7F-qf-sYP" firstAttribute="bottom" secondItem="DZb-ug-SyE" secondAttribute="bottom" id="pS4-so-YoY"/>
+                            <constraint firstItem="DZb-ug-SyE" firstAttribute="leading" secondItem="n0y-sf-CCU" secondAttribute="leading" id="0ei-Ud-d3i"/>
+                            <constraint firstAttribute="bottom" secondItem="DZb-ug-SyE" secondAttribute="bottom" id="5aO-tP-ayn"/>
+                            <constraint firstItem="DZb-ug-SyE" firstAttribute="top" secondItem="n0y-sf-CCU" secondAttribute="top" id="7Q5-Ff-SgF"/>
+                            <constraint firstAttribute="trailing" secondItem="DZb-ug-SyE" secondAttribute="trailing" id="Z1C-iA-c4v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J7F-qf-sYP"/>
                     </view>
@@ -66,26 +66,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hV-Td-pq4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2096.8000000000002" y="138.98050974512745"/>
         </scene>
         <!--Google-->
         <scene sceneID="c6S-eA-ymH">
             <objects>
                 <viewController id="BrL-Ho-ZIJ" customClass="GoogleMapViewController" customModule="MapKit_2_10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DCl-Sp-8gw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilJ-aE-Bbd" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Bfq-tv-zQV" firstAttribute="trailing" secondItem="ilJ-aE-Bbd" secondAttribute="trailing" id="3tR-qQ-uDg"/>
-                            <constraint firstItem="Bfq-tv-zQV" firstAttribute="bottom" secondItem="ilJ-aE-Bbd" secondAttribute="bottom" id="9TU-Q5-7Ay"/>
-                            <constraint firstItem="ilJ-aE-Bbd" firstAttribute="top" secondItem="Bfq-tv-zQV" secondAttribute="top" id="Ga0-NS-eZc"/>
+                            <constraint firstAttribute="bottom" secondItem="ilJ-aE-Bbd" secondAttribute="bottom" id="7Tv-9H-IVj"/>
+                            <constraint firstItem="ilJ-aE-Bbd" firstAttribute="top" secondItem="DCl-Sp-8gw" secondAttribute="top" id="ZP6-Lt-rgN"/>
                             <constraint firstItem="ilJ-aE-Bbd" firstAttribute="leading" secondItem="Bfq-tv-zQV" secondAttribute="leading" id="rsk-nW-cXh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bfq-tv-zQV"/>
@@ -97,26 +97,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0a-Mc-Acx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2692" y="139"/>
+            <point key="canvasLocation" x="3631.1999999999998" y="138.98050974512745"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="IcS-LW-hDF">
+        <scene sceneID="akF-Xc-p03">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VvZ-va-K06" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eAc-7y-h3O" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w9G-KM-KyC">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GZz-pD-Ym1">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Q2f-ZF-P1z"/>
-                        <segue destination="Jat-3g-29h" kind="relationship" relationship="viewControllers" id="ThH-90-2wU"/>
-                        <segue destination="BrL-Ho-ZIJ" kind="relationship" relationship="viewControllers" id="B0o-yI-1qU"/>
+                        <segue destination="Jat-3g-29h" kind="relationship" relationship="viewControllers" id="YN1-Vk-HgQ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="LJv-3n-iya"/>
+                        <segue destination="BrL-Ho-ZIJ" kind="relationship" relationship="viewControllers" id="27v-au-xcK"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QH2-oG-dX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5r-v9-Uxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1157.5999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

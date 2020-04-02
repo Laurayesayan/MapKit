@@ -16,6 +16,8 @@
 		F7DA6C802434C9080029C4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA6C7E2434C9080029C4A0 /* LaunchScreen.storyboard */; };
 		F7DA6C882434E71B0029C4A0 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA6C872434E71B0029C4A0 /* GoogleMapViewController.swift */; };
 		F7DA6C8A2434E7280029C4A0 /* AppleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA6C892434E7280029C4A0 /* AppleMapViewController.swift */; };
+		F7DA6C8E2435F3660029C4A0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA6C8D2435F3660029C4A0 /* DataModel.swift */; };
+		F7DA6C922436250E0029C4A0 /* kremlin.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F7DA6C912436250E0029C4A0 /* kremlin.geojson */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F7DA6C812434C9080029C4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7DA6C872434E71B0029C4A0 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		F7DA6C892434E7280029C4A0 /* AppleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapViewController.swift; sourceTree = "<group>"; };
+		F7DA6C8D2435F3660029C4A0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F7DA6C912436250E0029C4A0 /* kremlin.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kremlin.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,16 +89,34 @@
 			isa = PBXGroup;
 			children = (
 				F7DA6C732434C9040029C4A0 /* AppDelegate.swift */,
-				F7DA6C752434C9040029C4A0 /* SceneDelegate.swift */,
-				F7DA6C772434C9040029C4A0 /* YandexMapViewController.swift */,
-				F7DA6C872434E71B0029C4A0 /* GoogleMapViewController.swift */,
-				F7DA6C892434E7280029C4A0 /* AppleMapViewController.swift */,
-				F7DA6C792434C9040029C4A0 /* Main.storyboard */,
 				F7DA6C7C2434C9080029C4A0 /* Assets.xcassets */,
-				F7DA6C7E2434C9080029C4A0 /* LaunchScreen.storyboard */,
+				F7DA6C8B2435F3240029C4A0 /* Controller */,
 				F7DA6C812434C9080029C4A0 /* Info.plist */,
+				F7DA6C912436250E0029C4A0 /* kremlin.geojson */,
+				F7DA6C7E2434C9080029C4A0 /* LaunchScreen.storyboard */,
+				F7DA6C792434C9040029C4A0 /* Main.storyboard */,
+				F7DA6C8C2435F34A0029C4A0 /* Model */,
+				F7DA6C752434C9040029C4A0 /* SceneDelegate.swift */,
 			);
 			path = MapKit_2_10;
+			sourceTree = "<group>";
+		};
+		F7DA6C8B2435F3240029C4A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7DA6C892434E7280029C4A0 /* AppleMapViewController.swift */,
+				F7DA6C872434E71B0029C4A0 /* GoogleMapViewController.swift */,
+				F7DA6C772434C9040029C4A0 /* YandexMapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7DA6C8C2435F34A0029C4A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DA6C8D2435F3660029C4A0 /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +182,7 @@
 				F7DA6C802434C9080029C4A0 /* LaunchScreen.storyboard in Resources */,
 				F7DA6C7D2434C9080029C4A0 /* Assets.xcassets in Resources */,
 				F7DA6C7B2434C9040029C4A0 /* Main.storyboard in Resources */,
+				F7DA6C922436250E0029C4A0 /* kremlin.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +240,7 @@
 				F7DA6C882434E71B0029C4A0 /* GoogleMapViewController.swift in Sources */,
 				F7DA6C8A2434E7280029C4A0 /* AppleMapViewController.swift in Sources */,
 				F7DA6C762434C9040029C4A0 /* SceneDelegate.swift in Sources */,
+				F7DA6C8E2435F3660029C4A0 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,10 @@
+{"type":"FeatureCollection",
+    "features":[
+        {"type":"Feature","properties":{"title": "Успенский собор", "discipline": "Собор"},
+            "geometry":{"type":"Point","coordinates":[37.61706680059433,55.75100708784273]}},
+        {"type":"Feature","properties":{"title": "Успенская звонница", "discipline": "Звонница" },"geometry":{"type":"Point","coordinates":[37.618193328380585,55.7509195354986]}},
+        {"type":"Feature","properties":{"title": "Патриаршие палаты", "discipline": "Палата"},"geometry":{"type":"Point","coordinates":[37.61675298213959,55.751206344169326]}},
+        {"type":"Feature","properties":{"title": "Большой кремлевский дворец", "discipline": "Дворец"},"geometry":{"type":"Point","coordinates":[37.61638283729553,55.75054064291655]}},
+        {"type":"Feature","properties":{"title": "Архангельский собор", "discipline": "Собор"},"geometry":{"type":"Point","coordinates":[37.617825865745544,55.750247791148475]}}]
+    
+}
