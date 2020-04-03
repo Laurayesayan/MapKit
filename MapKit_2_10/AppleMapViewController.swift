@@ -23,7 +23,7 @@ class AppleMapViewController: UIViewController {
 //        mapView.userTrackingMode = MKUserTrackingMode.follow
         mapView.register(LandmarkMarkerView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
-        loadLandmarks()
+        loadLandmarks(landmarks: &landmarks)
         mapView.addAnnotations(landmarks)
         
         let marker = CLLocation(latitude: landmarks[0].coordinate.latitude, longitude: landmarks[0].coordinate.longitude)
@@ -41,31 +41,11 @@ class AppleMapViewController: UIViewController {
     func restrictRegion(around coordinates: CLLocation) {
         mapView.centerToLocation(coordinates)
         
-        let region = MKCoordinateRegion(center: coordinates.coordinate, latitudinalMeters: 20000, longitudinalMeters: 20000)
-        mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
-
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 2000)
-        mapView.setCameraZoomRange(zoomRange, animated: true)
-    }
-    
-    // Загрузка данных из geojson файла
-    func loadLandmarks() {
-        guard let fileName = Bundle.main.url(forResource: "kremlin", withExtension: "geojson"),
-            let landmarkData = try? Data(contentsOf: fileName) else {
-                return
-        }
-        
-        do {
-            let features = try MKGeoJSONDecoder()
-                .decode(landmarkData)
-                .compactMap { $0 as? MKGeoJSONFeature }
-            
-            let validWorks = features.compactMap(Landmark.init)
-            
-            landmarks.append(contentsOf: validWorks)
-        } catch {
-            print("Unexpected error: \(error).")
-        }
+//        let region = MKCoordinateRegion(center: coordinates.coordinate, latitudinalMeters: 20000, longitudinalMeters: 20000)
+//        mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
+//
+//        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 2000)
+//        mapView.setCameraZoomRange(zoomRange, animated: true)
     }
     
 }

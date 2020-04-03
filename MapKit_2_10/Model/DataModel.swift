@@ -8,7 +8,9 @@
 
 import Foundation
 import MapKit
+import GoogleMaps
 
+// For Apple maps.
 class Landmark: NSObject, MKAnnotation {
     let title: String?
     let discipline: String?
@@ -75,3 +77,36 @@ class LandmarkMarkerView: MKMarkerAnnotationView {
     }
 }
 
+// Загрузка данных из geojson файла
+func loadLandmarks(landmarks: inout [Landmark]) {
+    guard let fileName = Bundle.main.url(forResource: "kremlin", withExtension: "geojson"),
+        let landmarkData = try? Data(contentsOf: fileName) else {
+            return
+    }
+    
+    do {
+        let features = try MKGeoJSONDecoder()
+            .decode(landmarkData)
+            .compactMap { $0 as? MKGeoJSONFeature }
+        
+        let validWorks = features.compactMap(Landmark.init)
+        
+        landmarks.append(contentsOf: validWorks)
+    } catch {
+        print("Unexpected error: \(error).")
+    }
+}
+
+// For Google maps.
+class Marker: GMSMarker {
+    let place: Landmark
+    
+    init(place: Landmark) {
+        self.place = place
+        super.init()
+        
+        position = place.coordinate
+        snippet = place.title
+    }
+    
+}
