@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 import GoogleMaps
+import YandexMapKit
 
 // For Apple maps.
 class Landmark: NSObject, MKAnnotation {
@@ -109,4 +110,15 @@ class Marker: GMSMarker {
         snippet = place.title
     }
     
+}
+
+// For Yandex maps.
+class YMarker {
+    var place: Landmark
+    var title: String?
+
+    init(place: Landmark) {
+        self.place = place
+        self.title = place.title
+    }
 }

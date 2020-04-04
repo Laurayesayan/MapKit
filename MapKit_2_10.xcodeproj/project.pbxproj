@@ -90,8 +90,6 @@
 			children = (
 				F7DA6C732434C9040029C4A0 /* AppDelegate.swift */,
 				F7DA6C7C2434C9080029C4A0 /* Assets.xcassets */,
-				F7DA6C872434E71B0029C4A0 /* GoogleMapViewController.swift */,
-				F7DA6C892434E7280029C4A0 /* AppleMapViewController.swift */,
 				F7DA6C8B2435F3240029C4A0 /* Controller */,
 				F7DA6C812434C9080029C4A0 /* Info.plist */,
 				F7DA6C912436250E0029C4A0 /* kremlin.geojson */,
@@ -106,6 +104,8 @@
 		F7DA6C8B2435F3240029C4A0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7DA6C892434E7280029C4A0 /* AppleMapViewController.swift */,
+				F7DA6C872434E71B0029C4A0 /* GoogleMapViewController.swift */,
 				F7DA6C772434C9040029C4A0 /* YandexMapViewController.swift */,
 			);
 			path = Controller;
